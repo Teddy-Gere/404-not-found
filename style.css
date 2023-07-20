@@ -1,0 +1,33 @@
+/* reset */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+ul,
+header,
+main,
+footer {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
