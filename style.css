@@ -27,7 +27,134 @@ img {
     height: auto;
 }
 
-button{
+button {
     background-color: transparent;
     border: none;
+}
+
+/* General style */
+
+body {
+    margin-left: 4.83rem;
+    margin-top: 2rem;
+}
+
+/* Header */
+
+.page__header {
+    font-family: "Inconsolata";
+    color: #333;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.12rem;
+}
+
+/* Main */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+}
+
+.main__img {
+    width: 33.7015rem;
+    height: 27.96413rem;
+}
+
+
+.message__header {
+    color: #333333;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: -0.14rem;
+    width: 35rem;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+.message__text {
+    color: #4F4F4F;
+    font-family: Space Mono;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0525rem;
+    width: 23rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    background-color: #333;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.03063rem;
+    text-transform: uppercase;
+    padding: 2em;
+}
+
+/* footer */
+.footer__text {
+    text-align: center;
+    margin-top: 6rem;
+    color: #BDBDBD;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer__text a {
+    color: #BDBDBD;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+/* Media queries */
+@media screen and (max-width: 400px) {
+    body{
+        margin-left:2rem;
+        margin-top: 1rem;
+    }
+    .main {
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }
+
+    .main__img {
+        width: 17.92688rem;
+        height: 14rem;
+    }
+    .message__header{
+        font-size: 3rem;
+        width: 22rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    .message__text{
+        font-size: 1.125rem;
+        width: 21rem;
+        margin-bottom: 2rem;
+    }
+    .btn{
+        font-size: 0.875rem;
+        padding: 1.5em;
+
+    }
+
+    .footer__text{
+        margin-top: 1.2rem;
+        text-align: start;
+    }
 }
